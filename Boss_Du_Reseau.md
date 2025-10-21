@@ -1,3 +1,14 @@
+
+# TP Réseau — Accès externe & firewall Linux
+
+## Objectifs
+
+- Apprendre à exposer un service d’une VM vers l’extérieur (port forwarding / bridged).
+
+- Mettre en place un pare-feu Linux qui filtre et journalise le trafic.
+
+- Comprendre la notion de DMZ et de routage entre hôte, VM et Internet.
+
 ## Phase 1 — Préparer une VM accessible depuis l’extérieur
 
 ### Situation de départ
