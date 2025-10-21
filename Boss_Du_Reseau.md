@@ -167,7 +167,7 @@ iptables -A FORWARD -p tcp --dport 22 -j REJECT
 
 ### En ordre
 
-- Architecture réseau
+- 1 : Architecture réseau
 ````
 HOST (browser)
    ↓ NAT Port Forwarding (HostPort:8080 → Firewall:8080)
@@ -180,7 +180,7 @@ WEB SERVER VM
    - Gateway → 192.168.100.1 (Firewall)
 ````
 
-- Statut d'accès
+- 2 : Statut d'accès
 ````
 | HTTP (TCP 8000 → NAT:8080) | ✅ Ouvert | consulté via l'hôte du site |
 
@@ -188,7 +188,7 @@ WEB SERVER VM
 
 | SSH (TCP 22) | ❌ Bloqué | REJET + enregistré par le pare-feu |
 ````
-- Test de connexion
+- 3 : Test de connexion
 
 ````http://localhost:8080````
 
@@ -196,7 +196,7 @@ WEB SERVER VM
 
 La page Web s'est ouverte avec succès → le trafic a été redirigé via le pare-feu.
 
-- Preuve de journal
+- 4 : Preuve de journal
 
 Surveillance des journaux sur le pare-feu :
 
@@ -209,7 +209,7 @@ Les connexions Ping et SSH sont activement bloquées et enregistrées par le par
 ## Résultat final attendu
 ### Un mini-système fonctionnel et observable :
 
-- Hebergement d'un service réel,
+- 5 : Hebergement d'un service réel,
 Service accessible à d’autres,
 Protection du service et log du trafic en n’utilisant que du Linux et VirtualBox.
 
