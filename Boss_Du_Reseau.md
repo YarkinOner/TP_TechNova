@@ -209,7 +209,7 @@ Les connexions Ping et SSH sont activement bloquées et enregistrées par le par
 ## Résultat final attendu
 ### Un mini-système fonctionnel et observable :
 
-- 5 : Hebergement d'un service réel,
+- Hebergement d'un service réel,
 Service accessible à d’autres,
 Protection du service et log du trafic en n’utilisant que du Linux et VirtualBox.
 
